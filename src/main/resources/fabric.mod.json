@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "minecraft_progress_show",
+  "version": "${version}",
+  "name": "Minecraft Progress Show",
+  "description": "Shows exactly which advancement criteria are completed and which are still missing in Better Advancements.",
+  "authors": [
+    "Haruko386 Game Studio"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "studio.haruko.progressshow.ProgressShowClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "=1.21.11",
+    "java": ">=21",
+    "fabric-api": "*",
+    "betteradvancements": ">=0.4.8.54"
+  }
+}
