@@ -1,4 +1,4 @@
-# Minecraft Progress Show
+# Haruko386's Minecraft Mod Repository
 
 一个适用于 Minecraft 1.21.11 / Fabric 的纯客户端附属模组。
 
