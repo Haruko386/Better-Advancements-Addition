@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "studio.haruko.betterpet.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "FollowOwnerGoalMixin",
+    "MobEntityMixin",
+    "TameableEntityMixin",
+    "TameableShoulderEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

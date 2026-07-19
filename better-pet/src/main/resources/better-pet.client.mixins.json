@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "studio.haruko.betterpet.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "LivingEntityRendererMixin",
+    "LivingEntityRenderStateMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

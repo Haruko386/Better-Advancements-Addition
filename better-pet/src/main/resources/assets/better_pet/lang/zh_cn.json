@@ -1,0 +1,4 @@
+{
+  "message.better_pet.anchor_enabled": "已启用范围游荡：中心 %s，半径 30 格",
+  "message.better_pet.anchor_disabled": "已恢复普通宠物行为"
+}

@@ -1,0 +1,4 @@
+{
+  "message.better_pet.anchor_enabled": "Roaming enabled: center %s, radius 30 blocks",
+  "message.better_pet.anchor_disabled": "Normal pet behavior restored"
+}

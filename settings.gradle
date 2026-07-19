@@ -9,4 +9,7 @@ pluginManagement {
 	}
 }
 
-rootProject.name = 'minecraft-progress-show'
+rootProject.name = 'minecraft-mod-list'
+
+include 'minecraft-progress-show'
+include 'better-pet'
