@@ -1,41 +1,32 @@
-# Minecraft Progress Show
+# Haruko386 的 Minecraft Mod 合集
 
-一个适用于 Minecraft 1.21.11 / Fabric 的纯客户端附属模组。
+这是一个面向个人使用的 Fabric mod 合集。每个 mod 都放在独立子目录中，并拥有自己的源码、构建配置和说明文档。
 
-它会把 Better Advancements 的进度条件显示模式固定为 `All`：
+## Mod 列表
 
-- 绿色 `+`：已经完成的条件；
-- 红色 `x`：尚未完成的条件；
-- 不再只显示“剩余 N 个”，而是列出每个未完成条件的名称；
-- 无需按住 Shift。
+| Mod | 说明 | 环境 |
+| --- | --- | --- |
+| [Minecraft Progress Show](minecraft-progress-show/README.md) | 让 Better Advancements 直接列出已完成与未完成的进度条件 | 纯客户端 |
+| [Better Pet](better-pet/README.md) | 让驯服的猫、狼和鹦鹉在指定位置附近自由活动 | 客户端与服务端 |
 
-## 安装
-
-将下面两个 JAR 同时放进当前 Minecraft 实例的 `mods` 文件夹：
-
-1. `BetterAdvancements-Fabric-1.21.11-0.4.8.54.jar`
-2. `minecraft-progress-show-1.0.0.jar`
-
-同时需要 Fabric API。服务端不需要安装本模组。
+当前目标版本：Minecraft `1.21.11`、Fabric Loader `0.18.4+`、Java `21+`。
 
 ## 构建
 
-Windows：
+在仓库根目录运行：
 
 ```powershell
 .\gradlew.bat build
 ```
 
-成品位于 `build/libs/minecraft-progress-show-1.0.0.jar`。
+成品分别位于：
 
-本项目没有引用任何经过映射的 Minecraft 类，因此使用标准 Java 构建即可，
-不需要 Loom 的名称重映射步骤。`src/stubs` 只提供编译期 API 声明，Gradle
-不会把这些声明打包进成品；游戏运行时会使用 Fabric Loader 和
-Better Advancements 里的真实类。
+- `minecraft-progress-show/build/libs/`
+- `better-pet/build/libs/`
 
-## 兼容范围
+只构建其中一个 mod：
 
-- Minecraft 1.21.11
-- Fabric Loader 0.18.4 或更高版本
-- Java 21 或更高版本
-- Better Advancements 0.4.8.54 或更高的兼容版本
+```powershell
+.\gradlew.bat :minecraft-progress-show:build
+.\gradlew.bat :better-pet:build
+```
